@@ -1,0 +1,115 @@
+.spell-details-container {
+  background: #fff;
+  border: 2px solid #c43a3a;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.spell-details-header {
+  margin-bottom: 10px;
+}
+
+.spell-name {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.spell-details-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.spell-type {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #c43a3a;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.spell-details-content p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.spell-details-content p strong {
+  color: #c43a3a;
+  font-weight: 500;
+}
+
+.spell-details-footer {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #333;
+  margin-top: 10px;
+  text-align: left;
+  border-top: 2px solid #c43a3a;
+  padding-top: 10px;
+}
+
+.spell-details-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-back {
+  background-color: #c43a3a;
+  color: #fff;
+}
+
+.btn-back:hover {
+  background-color: #a93030;
+}
+
+.btn-favorite {
+  background-color: #4CAF50; /* Verde para adicionar aos favoritos */
+  color: #fff;
+}
+
+.btn-favorite:hover {
+  background-color: #45a049; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+/* Skeleton styles */
+.spell-details-skeleton {
+  background-color: #f0f0f0;
+  height: 12px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.spell-details-skeleton::before {
+  content: '';
+  display: block;
+  height: 18px;
+  width: 70%;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
