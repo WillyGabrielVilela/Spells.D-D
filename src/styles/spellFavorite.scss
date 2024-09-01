@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  overflow-y: hidden;
+}
+
+.spell-container {
+  margin: 10px;
+}
+
+.spell-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 160px); /* Ajuste a altura máxima conforme necessário */
+}
+
+.spell-card {
+  background: #fff;
+  border: 2px solid #c43a3a;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.spell-header {
+  border-bottom: 2px solid #c43a3a;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.spell-header h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.spell-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.spell-type {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #c43a3a;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.btn-remove {
+  background-color: #c43a3a;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: auto; /* Empurra o botão para a parte inferior do card */
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.btn-remove:hover {
+  background-color: #a93030;
+}
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c43a3a;
+  border-radius: 8px;
+  height: 50px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #a93030;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .spell-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .spell-card {
+    padding: 10px;
+  }
+
+  .spell-header h2 {
+    font-size: 1.2em;
+  }
+
+  .spell-details-header h2 {
+    font-size: 1.5em;
+  }
+
+  .spell-details-container {
+    padding: 10px;
+  }
+}

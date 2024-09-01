@@ -1,3 +1,10 @@
+.spell-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 .spell-details-container {
   background: #fff;
   border: 2px solid #c43a3a;
@@ -9,7 +16,8 @@
   font-family: 'Roboto', sans-serif;
   position: relative;
   transition: transform 0.2s ease-in-out;
-
+  max-height: 450px;
+  overflow: auto;
 }
 
 .spell-details-header {
@@ -64,7 +72,7 @@
 
 .spell-details-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -76,6 +84,7 @@
   font-size: 1em;
   font-weight: 500;
   transition: background-color 0.3s;
+  margin: 0 5px;
 }
 
 .btn-back {
@@ -88,15 +97,14 @@
 }
 
 .btn-favorite {
-  background-color: #4CAF50; /* Verde para adicionar aos favoritos */
+  background-color: #4CAF50;
   color: #fff;
 }
 
 .btn-favorite:hover {
-  background-color: #45a049; /* Tom mais escuro de verde ao passar o mouse */
+  background-color: #45a049;
 }
 
-/* Skeleton styles */
 .spell-details-skeleton {
   background-color: #f0f0f0;
   height: 12px;
@@ -112,4 +120,44 @@
   margin-bottom: 8px;
   border-radius: 4px;
   background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .spell-details-container {
+    padding: 15px;
+    box-shadow: none;
+    max-height: 350px;
+  }
+
+  .spell-name {
+    font-size: 1.2em;
+  }
+
+  .spell-details-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .spell-details-content p {
+    font-size: 0.85em;
+  }
+
+  .spell-details-footer {
+    font-size: 0.75em;
+    margin-top: 15px;
+  }
+
+  .spell-details-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 0.9em;
+  }
 }
