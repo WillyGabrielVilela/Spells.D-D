@@ -28,23 +28,25 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 ### Passo a Passo
 
-1. **Clone o repositório:**
+Siga os passos abaixo para rodar o Magic Spell Manager localmente:
 
-   ```bash
-   git clone https://github.com/WillyGabrielVilela/Spells.D-D.git
-   
-```bash
-   cd Spells.D-D
-```
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/WillyGabrielVilela/Spells.D-D.git
+    ```
 
-```bash
-   npm install
-```
+2. **Instale as dependências**:
+    ```bash
+    cd Spells.D-D
+    npm install
+    ```
 
-```bash
-   npm run dev
-```
-```bash
-Abra seu navegador na porta http://localhost:5173
-```
+3. **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm run dev
+    ```
+
+4. **Abra no navegador**:
+   Abra `http://localhost:5173` no seu navegador para visualizar o aplicativo.
+
 
