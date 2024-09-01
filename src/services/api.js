@@ -4,8 +4,8 @@ export const fetchSpells = async () => {
   const response = await fetch(`${API_URL}/spells`);
   const data = await response.json();
   return {
-    results: data.results || [], // Retorna apenas a lista de feitiços
-    count: data.count // Adiciona a contagem total
+    results: data.results || [],
+    count: data.count
   };
 };
 
@@ -22,15 +22,13 @@ export const fetchSpellDetails = async (spellIndex) => {
   }
 };
 
-
 export const fetchClasses = async () => {
   try {
     const response = await fetch(`${API_URL}/classes`);
     const data = await response.json();
-    console.log('Classes Data:', data); // Adicione este log
-    return data.results || []; // Retorna apenas a lista de classes
+    return data.results || [];
   } catch (error) {
     console.error('Erro ao buscar classes:', error);
-    throw error; // Propaga o erro para ser tratado no componente
+    throw error;
   }
 };
