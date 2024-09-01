@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import SpellList from './components/SpellList';
+import Home from './pages/SpellHome';
+import SpellList from './pages/SpellList';
 import SpellDetails from './pages/SpellDetails';
-import NavBar from './components/Navbar'; // Corrigido para Navbar
+import NavBar from './components/Navbar';
+import Favorites from './pages/SpellFavorite';
+import Glossary from './pages/SpellGlossary';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/spells" element={<SpellList />} />
         <Route path="/spell/:spellIndex" element={<SpellDetails />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/glossary" element={<Glossary />} />
       </Routes>
     </Router>
   );
