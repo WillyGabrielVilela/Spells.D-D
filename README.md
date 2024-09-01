@@ -32,12 +32,19 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
    ```bash
    git clone https://github.com/WillyGabrielVilela/Spells.D-D.git
-
-   cd Spells.D-D
-
-   npm install
    
-   npm run dev
+```bash
+   cd Spells.D-D
+```
 
+```bash
+   npm install
+```
+
+```bash
+   npm run dev
+```
+```bash
 Abra seu navegador na porta http://localhost:5173
+```
 
