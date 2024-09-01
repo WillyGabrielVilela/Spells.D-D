@@ -1,4 +1,4 @@
-import '../styles/glossary.scss';
+import '../styles/spellGlossary.scss';
 import cantripIcon from '../assets/cantrip-icon.svg';
 import ritualIcon from '../assets/ritual-icon.svg';
 

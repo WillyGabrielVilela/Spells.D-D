@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/favorite.scss';
+import '../styles/spellFavorite.scss';
 import cantripIcon from '../assets/cantrip-icon.svg';
 import ritualIcon from '../assets/ritual-icon.svg';
 

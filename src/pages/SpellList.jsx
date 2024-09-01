@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchSpells, fetchSpellDetails, fetchClasses } from '../services/api';
 import { Link } from 'react-router-dom';
-import '../styles/styles.scss';
+import '../styles/spellList.scss';
 import cantripIcon from '../assets/cantrip-icon.svg';
 import ritualIcon from '../assets/ritual-icon.svg';
 import searchIcon from '../assets/search-icon.svg';
